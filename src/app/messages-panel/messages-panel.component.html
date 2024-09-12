@@ -1,0 +1,15 @@
+<h1>Penhora Aí</h1>
+<div style="border: 1px solid rgba(0, 0, 0, .1); box-shadow: 1px 1px rgba(0, 0, 0, .2); padding: 10px; margin: 5% 20%; background-color: azure;border-radius: 20px;padding: 20px; height: 350px;overflow-y: scroll; position: relative;">
+    <div *ngIf="messageList$ | async as messageList">
+        <div *ngFor="let message of messages">
+            <div style="display: flex;" [ngStyle]="{'flex-direction': (message.owner == system_owner) ? 'row' : 'row-reverse'}">
+                <app-message [message]="message"></app-message>
+            </div>
+            <br>
+        </div>
+    </div>
+    <div style="margin-bottom: 10px; position: sticky; bottom: 0px;margin-top: 20px;">
+        <app-chat-text-input (onMessageSent)="sendMessage($event)" *ngIf="last_message_type == 'text'"></app-chat-text-input>
+        <app-chat-file-input *ngIf="last_message_type == 'file'"></app-chat-file-input>
+    </div>
+</div>

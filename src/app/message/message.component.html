@@ -1,0 +1,4 @@
+<div style="display: flex;flex-direction: row;height: 60px; margin: 0px 10px;">
+    <app-speaker-icon *ngIf="message.owner == system_owner"></app-speaker-icon>
+    <app-chat-message [content]="message.content" [isOwner]="message.owner == system_owner"></app-chat-message>
+</div>
