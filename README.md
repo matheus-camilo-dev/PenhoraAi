@@ -1,6 +1,8 @@
 Penhora Aí - Plataforma Descentralizada de Penhores
 Objetivo
 
+!![logo](logo.png)
+
 O projeto Penhora Aí visa democratizar o acesso ao crédito para setores informais da economia, oferecendo uma plataforma descentralizada (dApp) que utiliza NFTs e blockchain para facilitar penhores de ativos. A solução automatiza e simplifica o processo de obtenção de crédito, eliminando a necessidade de análises tradicionais, promovendo transparência e segurança para os usuários.
 Equipe
 
