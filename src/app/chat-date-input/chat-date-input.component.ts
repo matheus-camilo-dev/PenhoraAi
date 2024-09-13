@@ -1,15 +1,14 @@
-import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Output } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-chat-text-input',
+  selector: 'app-chat-date-input',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule],
-  templateUrl: './chat-text-input.component.html',
-  styleUrl: './chat-text-input.component.css'
+  imports: [ReactiveFormsModule],
+  templateUrl: './chat-date-input.component.html',
+  styleUrl: './chat-date-input.component.css'
 })
-export class ChatTextInputComponent {
+export class ChatDateInputComponent {
   @Output() onMessageSent = new EventEmitter<any>();
 
   applyForm = new FormGroup({

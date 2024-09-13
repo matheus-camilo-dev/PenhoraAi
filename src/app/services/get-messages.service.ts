@@ -54,16 +54,16 @@ export class GetMessagesService {
       },
       {
         owner : Owner.system,
-        content: "Digite o seu nome para iniciarmos a conversa!",
+        content: "Digite o seu Nome Completo para iniciarmos a conversa!",
         responseType : "text",
         requireData : true,
-        requestKey: "name"
+        requestKey: "nome"
       }
     ],
     [
       {
         owner : Owner.system,
-        content: "Certo! Agora seu CPF!",
+        content: "Agora seu CPF!",
         responseType : "text",
         requireData : true,
         requestKey: "cpf"
@@ -72,26 +72,57 @@ export class GetMessagesService {
     [
       {
         owner : Owner.system,
-        content: "OK! Agora seu email!",
-        responseType : "text",
+        content: "Data de nascimento!",
+        responseType : "date",
         requireData : true,
-        requestKey: "email"
+        requestKey: "dataNascimento"
       },
     ],
     [
       {
         owner : Owner.system,
-        content: "Ultimo! Agora seu telefone!",
+        content: "Digite o seu Telefone",
         responseType : "text",
         requireData : true,
-        requestKey: "telefone",
+        requestKey: "telefone"
+      },
+    ],
+    [
+      {
+        owner : Owner.system,
+        content: "Agora a parte boa, digite a sua chave pix!",
+        responseType : "text",
+        requireData : true,
+        requestKey: "pix",
+      },
+    ],
+    [
+      {
+        owner : Owner.system,
+        content: "Digite o endereço da sua Wallet!",
+        responseType : "text",
+        requireData : true,
+        requestKey: "wallet",
+      },
+    ],
+    [
+      {
+        owner : Owner.system,
+        content: "O que você deseja?",
+        responseType : "options",
+        requireData : true,
+        requestKey: "role",
+        options : [
+          {id: 1, value: "Investir"},
+          {id: 2, value: "Pegar emprestado"}
+        ],
         isSubmit: true
       },
     ],
     [
       {
         owner : Owner.system,
-        content: "Um contrato formal foi enviado para o seu email!"
+        content: "Uhuh!! Um contrato formal foi enviado para o seu email! :)"
       },
     ]
   ]

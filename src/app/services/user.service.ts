@@ -7,13 +7,13 @@ export class UserService {
 
   constructor() { }
 
-  requestData : { [key: string]: string } = {};
+  private requestData : { [key: string]: string } = {};
 
   addData(dataKey:string, dataValue:string){
     this.requestData[dataKey] = dataValue;
   }
 
-  showData(){
-    console.log(this.requestData)
+  getData(){
+    return this.requestData;
   }
 }

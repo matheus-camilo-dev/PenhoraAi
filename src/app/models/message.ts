@@ -7,4 +7,10 @@ export interface Message {
     responseType?: string
     requestKey? : string
     isSubmit?: boolean 
+    options?: ChatMessageOptions[]
+}
+
+export interface ChatMessageOptions{
+    id: number,
+    value: string
 }

@@ -1,5 +1,10 @@
-<form [formGroup]="applyForm" (submit)="submitApplication()">
-<div class="form-group">
-    <input type="text" class="form-control" id="name" formControlName="field" placeholder="Escreva aqui sua resposta...">
-</div>
+<form [formGroup]="applyForm" (submit)="sendInput()">
+    <div class="row">
+        <div class="col-9">
+            <input type="text" class="form-control" id="field" formControlName="field">
+        </div>
+        <div class="col-3">
+            <button class="btn btn-warning w-100">Enviar</button>
+        </div>
+    </div>
 </form>

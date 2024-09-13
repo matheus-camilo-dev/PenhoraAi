@@ -1,0 +1,5 @@
+<form [formGroup]="applyForm" >
+    <div class="row">
+        <button type="submit" *ngFor="let option of options" class="btn col bg-warning m-2" name="field" (click)="sendInput(option.id, option.value)">{{ option.value }}</button>
+    </div>
+</form>
